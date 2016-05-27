@@ -114,7 +114,10 @@ void WebSocketClient::onError(WebSocket* ws, const cocos2d::network::WebSocket::
 {
     LocalDataClient * dataClient=LocalDataClient::getInstance();
     
-    messageHandle.insert(std::make_pair("chat", CC_CALLBACK_1(LocalDataChat::onMessage, dataClient->dataChat)));
+    messageHandle.insert(std::make_pair("chat",      CC_CALLBACK_1(LocalDataChat::onMessage, dataClient->dataChat)));
+    messageHandle.insert(std::make_pair("register", CC_CALLBACK_1(LocalDataUserLoginRegister::onMessageRegister, dataClient->dataUserloginRegister)));
+    messageHandle.insert(std::make_pair("login",     CC_CALLBACK_1(LocalDataUserLoginRegister::onMessageLogin, dataClient->dataUserloginRegister)));
+    
     //*****
     
     

@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "LocalDataChat.h"
-
+#include "LocalDataUserLoginRegister.h"
 
 class LocalDataClient
 {
@@ -25,6 +25,7 @@ protected:
     
 public:
     LocalDataChat * dataChat;
+    LocalDataUserLoginRegister * dataUserloginRegister;
     
 
 };

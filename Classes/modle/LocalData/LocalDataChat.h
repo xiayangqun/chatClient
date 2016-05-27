@@ -11,14 +11,14 @@
 
 #include <stdio.h>
 #include "../NotificationClient.h"
-#include "LocalDataProtocol.h"
 
 
-class LocalDataChat:public NotificationClientData,public LocalDataProtocol
+
+class LocalDataChat:public NotificationClientData
 {
 public:
     
-    void onMessage(const rapidjson::Document& jsonObject) override;
+    void onMessage(const rapidjson::Document& jsonObject);
     
     //接受到聊天记录的时间
     std::string lastTime;

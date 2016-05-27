@@ -21,10 +21,12 @@ LocalDataClient * LocalDataClient::getInstance()
 LocalDataClient::~LocalDataClient()
 {
     delete dataChat;
+    delete dataUserloginRegister;
 }
 
 
 LocalDataClient::LocalDataClient()
 {
     dataChat=new LocalDataChat();
+    dataUserloginRegister=new LocalDataUserLoginRegister();
 }

@@ -58,7 +58,7 @@
 		516277DD1CF7F19800F18EDB /* NotificationClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516277DB1CF7F19800F18EDB /* NotificationClient.cpp */; };
 		516277E11CF800D300F18EDB /* LocalDataClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516277DF1CF800D300F18EDB /* LocalDataClient.cpp */; };
 		516277E41CF8014500F18EDB /* LocalDataChat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516277E21CF8014500F18EDB /* LocalDataChat.cpp */; };
-		516277E71CF802FE00F18EDB /* LocalDataProtocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516277E51CF802FE00F18EDB /* LocalDataProtocol.cpp */; };
+		51F873321CF84F4C00E490B5 /* LocalDataUserLoginRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51F873301CF84F4C00E490B5 /* LocalDataUserLoginRegister.cpp */; };
 		521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6219F0C34300D177D7 /* Default-667h@2x.png */; };
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
@@ -162,8 +162,8 @@
 		516277E01CF800D300F18EDB /* LocalDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataClient.h; sourceTree = "<group>"; };
 		516277E21CF8014500F18EDB /* LocalDataChat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocalDataChat.cpp; sourceTree = "<group>"; };
 		516277E31CF8014500F18EDB /* LocalDataChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataChat.h; sourceTree = "<group>"; };
-		516277E51CF802FE00F18EDB /* LocalDataProtocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocalDataProtocol.cpp; sourceTree = "<group>"; };
-		516277E61CF802FE00F18EDB /* LocalDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataProtocol.h; sourceTree = "<group>"; };
+		51F873301CF84F4C00E490B5 /* LocalDataUserLoginRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocalDataUserLoginRegister.cpp; sourceTree = "<group>"; };
+		51F873311CF84F4C00E490B5 /* LocalDataUserLoginRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataUserLoginRegister.h; sourceTree = "<group>"; };
 		521A8E6219F0C34300D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
@@ -394,8 +394,8 @@
 			children = (
 				516277DF1CF800D300F18EDB /* LocalDataClient.cpp */,
 				516277E01CF800D300F18EDB /* LocalDataClient.h */,
-				516277E51CF802FE00F18EDB /* LocalDataProtocol.cpp */,
-				516277E61CF802FE00F18EDB /* LocalDataProtocol.h */,
+				51F873301CF84F4C00E490B5 /* LocalDataUserLoginRegister.cpp */,
+				51F873311CF84F4C00E490B5 /* LocalDataUserLoginRegister.h */,
 				516277E21CF8014500F18EDB /* LocalDataChat.cpp */,
 				516277E31CF8014500F18EDB /* LocalDataChat.h */,
 			);
@@ -544,11 +544,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				516277E71CF802FE00F18EDB /* LocalDataProtocol.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				516277D61CF7E08100F18EDB /* WebSocketClient.cpp in Sources */,
 				516277E11CF800D300F18EDB /* LocalDataClient.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				51F873321CF84F4C00E490B5 /* LocalDataUserLoginRegister.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				516277DD1CF7F19800F18EDB /* NotificationClient.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,

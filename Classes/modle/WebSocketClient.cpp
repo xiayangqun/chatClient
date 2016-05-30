@@ -33,10 +33,9 @@ WebSocketClient::~WebSocketClient()
 
 void WebSocketClient::sendMessage(const std::string& commend,const std::string& jsonString)
 {
-//    rapidjson::Document jsonObject;
-//    jsonObject.Parse<0>(jsonString.c_str());
-//    sendMessage(commend, jsonObject);
-    webSocket->send(jsonString);
+    rapidjson::Document jsonObject;
+    jsonObject.Parse<0>(jsonString.c_str());
+    sendMessage(commend, jsonObject);
 }
 
 void WebSocketClient::sendMessage(const std::string& commend,rapidjson::Document & jsonObject)
@@ -45,7 +44,10 @@ void WebSocketClient::sendMessage(const std::string& commend,rapidjson::Document
 //    jsonObject["commend"]=commend;
 
     auto& alloct=jsonObject.GetAllocator();
-    //jsonObject.AddMember("commend", commend, alloct);
+    
+    rapidjson::Value commendValue;
+    commendValue.SetString(commend.c_str(), commend.length());
+    jsonObject.AddMember("commend", commendValue, alloct);
    
     rapidjson::StringBuffer  buffer;
     rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);

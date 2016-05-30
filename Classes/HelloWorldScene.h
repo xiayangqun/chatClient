@@ -25,6 +25,11 @@ public:
     
     void onNewChat(NotificationClientData * chatData);
     void  menuCloseCallback(cocos2d::Ref * sender);
+    
+    void showNewChat(const std::string&  message);
+  
+    Color4B chatColor[5];
+    
 };
 
 #endif // __HELLOWORLD_SCENE_H__

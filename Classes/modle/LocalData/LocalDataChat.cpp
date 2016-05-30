@@ -14,7 +14,21 @@ void LocalDataChat::onMessage(const rapidjson::Document& jsonObject)
     const auto& serverData=jsonObject["serverData"];
     const auto& commend=jsonObject["commend"];
     
-    //to 解析数据啦
+    time_t  timeSince1970=serverData["time"].GetInt64();
+    lastTime=timeSince1970ToTimeString(timeSince1970);
+    world=serverData["world"].GetString();
     
+    //to 解析数据啦
     NotificationClient::getInstance()->postNoticate(commend.GetString(), this);
+}
+
+
+std::string  LocalDataChat::timeSince1970ToTimeString(time_t timeSince1970)
+{
+    struct tm *p;
+    p=gmtime(&timeSince1970);
+    char s[80];
+    strftime(s, 80, "%Y-%m-%d %H:%M:%S :", p);
+    
+    return std::string(s);
 }

@@ -77,8 +77,6 @@ void HelloWorld::onNewChat(NotificationClientData * chatData)
     LocalDataChat * chat=dynamic_cast<LocalDataChat *>(chatData);
     auto message=chat->lastTime + chat->world;
     showNewChat(message);
-    
-    
 }
 
 void HelloWorld::menuCloseCallback(cocos2d::Ref * sender)
@@ -100,7 +98,7 @@ void HelloWorld::menuCloseCallback(cocos2d::Ref * sender)
     editBox->setText("");
 }
 
-void HelloWorld::showNewChat(const  std::string&    message)
+void HelloWorld::showNewChat(const  std::string& message)
 {
     Label * chatLabel=Label::createWithSystemFont(message.c_str(), "fonts/Marker Felt.ttf", 15);
     

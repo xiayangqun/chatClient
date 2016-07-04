@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "../NotificationClient.h"
-
+#include "../Tools.h"
 
 
 class LocalDataChat:public NotificationClientData
@@ -25,8 +25,7 @@ public:
     //接收到聊天记录的内容
     std::string world;
     
-protected:
-    std::string timeSince1970ToTimeString(time_t t);
+
     
     
 };
